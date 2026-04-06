@@ -24,6 +24,7 @@ Most personal finance tools are either too simple (basic spreadsheets) or too co
 
 -----------------------------------------------------------------------------
 ## Project Structure
+```
 finflow/
 ├── public/
 │   └── favicon.ico
@@ -116,6 +117,7 @@ finflow/
 ├── postcss.config.js
 ├── vite.config.js
 └── package.json
+```
 
 ----------------------------------------------------------------------------------------
 
@@ -260,18 +262,30 @@ BCA Student | MERN Stack Developer
 ------------------------------------------------------------------------------------------
 ## Project Preview
 **Dashboard**
+
 <img width="1917" height="907" alt="Screenshot 2026-04-06 181538" src="https://github.com/user-attachments/assets/f729a6de-0edb-4a41-8c6d-f7dd6d7b52b1" />
+
 **Transaction**
+
 <img width="1919" height="907" alt="Screenshot 2026-04-06 181556" src="https://github.com/user-attachments/assets/ff27adde-0c7c-475a-8e0f-df8364ec2eeb" />
+
 **Insights**
+
 <img width="1919" height="909" alt="Screenshot 2026-04-06 181610" src="https://github.com/user-attachments/assets/cb9e15ca-7b83-4084-9a4e-767e05d32182" />
+
 **Add Transaction**
+
 <img width="1912" height="903" alt="Screenshot 2026-04-06 181623" src="https://github.com/user-attachments/assets/258c36b1-900c-4f75-b127-5b6722734541" />
+
 **Settings**
+
 <img width="1916" height="914" alt="Screenshot 2026-04-06 181734" src="https://github.com/user-attachments/assets/9db6a8b4-72bd-4fe6-9384-d24a2483982c" />
+
 **Profile**
+
 <img width="1919" height="909" alt="Screenshot 2026-04-06 181756" src="https://github.com/user-attachments/assets/821f81a1-9f8a-467a-98e3-aaa44e6366fb" />
------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
 
 
 
