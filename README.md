@@ -23,6 +23,101 @@ FinFlow is a production-grade personal finance dashboard that lets users track i
 Most personal finance tools are either too simple (basic spreadsheets) or too complex (bank-integrated SaaS products requiring accounts and APIs). There is a clear gap for a self-contained, privacy-first finance tracker that works offline, requires no backend, stores nothing on a server, and still delivers a polished, data-rich experience. Users also need granular control over who can view versus edit financial data — especially in shared or family finance contexts. FinFlow solves all of this in a single-page React application.
 
 -----------------------------------------------------------------------------
+## Project Structure
+finflow/
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   │   └── avatar.jpg
+│   │
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Topbar.jsx
+│   │   │   └── AppLayout.jsx
+│   │   │
+│   │   ├── ui/
+│   │   │   ├── Badge.jsx
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Toggle.jsx
+│   │   │   ├── Dropdown.jsx
+│   │   │   └── Modal.jsx
+│   │   │
+│   │   ├── dashboard/
+│   │   │   ├── StatCard.jsx
+│   │   │   ├── BalanceTrendChart.jsx
+│   │   │   ├── SpendingDonutChart.jsx
+│   │   │   ├── RecentTransactions.jsx
+│   │   │   ├── QuickActions.jsx
+│   │   │   └── BudgetProgress.jsx
+│   │   │
+│   │   ├── transactions/
+│   │   │   ├── TransactionTable.jsx
+│   │   │   ├── TransactionRow.jsx
+│   │   │   ├── TransactionFilters.jsx
+│   │   │   └── TransactionStats.jsx
+│   │   │
+│   │   ├── insights/
+│   │   │   ├── InsightCard.jsx
+│   │   │   ├── IncomeExpensesChart.jsx
+│   │   │   ├── SpendingByCategory.jsx
+│   │   │   ├── SavingsRate.jsx
+│   │   │   └── UpcomingBills.jsx
+│   │   │
+│   │   ├── settings/
+│   │   │   ├── RolePermissions.jsx
+│   │   │   ├── DisplayPreferences.jsx
+│   │   │   ├── DataManagement.jsx
+│   │   │   ├── AccountInfo.jsx
+│   │   │   ├── NotificationSettings.jsx
+│   │   │   └── StorageStatus.jsx
+│   │   │
+│   │   └── add-transaction/
+│   │       └── AddTransactionModal.jsx
+│   │
+│   ├── pages/
+│   │   ├── Dashboard.jsx
+│   │   ├── Transactions.jsx
+│   │   ├── Insights.jsx
+│   │   ├── Settings.jsx
+│   │   └── Profile.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useTransactions.js
+│   │   ├── useTheme.js
+│   │   └── useLocalStorage.js
+│   │
+│   ├── context/
+│   │   ├── ThemeContext.jsx
+│   │   ├── TransactionContext.jsx
+│   │   └── AuthContext.jsx
+│   │
+│   ├── data/
+│   │   └── mockData.js
+│   │
+│   ├── utils/
+│   │   ├── formatCurrency.js
+│   │   ├── formatDate.js
+│   │   └── calculations.js
+│   │
+│   ├── constants/
+│   │   ├── categories.js
+│   │   ├── roles.js
+│   │   └── routes.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+└── package.json
+
+----------------------------------------------------------------------------------------
 
 ## Dataset
 FinFlow uses a hand-crafted mock dataset of **248 realistic transactions** spanning **July 2024 to June 2025** across 14 categories:
@@ -40,6 +135,7 @@ All data is seeded from `mockData.js` and stored/retrieved from `localStorage` u
 
 |       Category        |                  Technology                           |
 |-----------------------|-------------------------------------------------------|
+|       UI Design       |                Figma                                  |
 |       Framework       |              React 18 (Vite)                          |
 |       Styling         |     Tailwind CSS v3 with custom config                |
 |        Charts         | Recharts (AreaChart, BarChart, ComposedChart,PieChart)|                                                            
@@ -51,8 +147,7 @@ All data is seeded from `mockData.js` and stored/retrieved from `localStorage` u
 |     Build Tool        |                     Vite                              |
 |     Language          |                JavaScript (JSX)                       |
 |     Fonts             | DM Sans + JetBrains Mono (Google Fonts)               |
-
------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 
 ## Methods
 
@@ -151,10 +246,33 @@ The main limitation is localStorage's ~5MB cap, which would limit the app to rou
 
 ## Author & Contact
 
-**Project:** FinFlow — Personal Finance Dashboard
-**Built with:** React 18 + Vite + Tailwind CSS + Recharts
-**Type:** Frontend-only SPA (Single Page Application)
-**Data:** Mock dataset (248 transactions, July 2024 – June 2025)
-**Codebase:** ~45 files, ~6,500 lines of JSX/JS
+## 👨‍💻 Author
 
-> Built entirely through an iterative AI-assisted development workflow — each component, context, hook, and utility was designed, reviewed, and refined step by step across a single conversation thread.
+**Mohd Irfan**  
+BCA Student | MERN Stack Developer  
+
+## 📞 Contact
+
+- 📧 Email: 📧 Email: [mohdirfan.webdev@gmail.com](mailto:mohdirfan.webdev@gmail.com)
+- 🔗 GitHub: [https://github.com/mohdirfansheikh04](https://github.com/mohdirfansheikh04)  
+- 💼 LinkedIn: [https://www.linkedin.com/in/mohd-irfan-a7129a2a2/](https://www.linkedin.com/in/mohd-irfan-a7129a2a2/)
+
+------------------------------------------------------------------------------------------
+## Project Preview
+**Dashboard**
+<img width="1917" height="907" alt="Screenshot 2026-04-06 181538" src="https://github.com/user-attachments/assets/f729a6de-0edb-4a41-8c6d-f7dd6d7b52b1" />
+**Transaction**
+<img width="1919" height="907" alt="Screenshot 2026-04-06 181556" src="https://github.com/user-attachments/assets/ff27adde-0c7c-475a-8e0f-df8364ec2eeb" />
+**Insights**
+<img width="1919" height="909" alt="Screenshot 2026-04-06 181610" src="https://github.com/user-attachments/assets/cb9e15ca-7b83-4084-9a4e-767e05d32182" />
+**Add Transaction**
+<img width="1912" height="903" alt="Screenshot 2026-04-06 181623" src="https://github.com/user-attachments/assets/258c36b1-900c-4f75-b127-5b6722734541" />
+**Settings**
+<img width="1916" height="914" alt="Screenshot 2026-04-06 181734" src="https://github.com/user-attachments/assets/9db6a8b4-72bd-4fe6-9384-d24a2483982c" />
+**Profile**
+<img width="1919" height="909" alt="Screenshot 2026-04-06 181756" src="https://github.com/user-attachments/assets/821f81a1-9f8a-467a-98e3-aaa44e6366fb" />
+-----------------------------------------------------------------------------------------------
+
+
+
+
